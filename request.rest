@@ -1,0 +1,29 @@
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJLZXZpbiBGYWlydXoiLCJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsImlhdCI6MTY5MzkxOTg0NywiZXhwIjoxNjkzOTE5ODY3fQ.k_tospwQWf2lXBW-zfVvPL8Z2hNKJC-0fHItte8ryw0
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "Kevin Fairuz",
+    "email": "admin@gmail.com",
+    "password": "123456",
+    "confPassword": "123456"
+}
+
+###
+
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "admin@gmail.com",
+    "password": "123456"
+}
+
+###
+GET http://localhost:5000/token
+
+###
+DELETE http://localhost:5000/logout
